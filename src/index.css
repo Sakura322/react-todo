@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./assets/mountain.jpg),
+    linear-gradient(
+      to bottom right,
+      rgba(37, 100, 235, 0.389),
+      rgba(2, 133, 199, 0.334)
+    );
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.todo-container {
+  width: 70vw;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+h1,
+h2 {
+  font-family: "Aboreto", cursive;
+  font-size: 50px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.input-container {
+  width: 40%;
+}
+
+.input {
+  margin-top: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  width: 75%;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid #075985;
+}
+
+.input-container > p {
+  width: 70%;
+  margin-top: 30px;
+  margin-right: auto;
+}
+
+.submit-icon {
+  font-size: 35px;
+  transform: translateY(12px);
+  margin-left: 3px;
+}
+
+.submit-icon:hover {
+  color: #075985;
+}
+
+.todos {
+  width: 55%;
+  min-height: 50vh;
+  max-height: 90vh;
+}
+
+.my-todos {
+  max-height: 80%;
+  min-height: 80%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: scroll;
+  background-color: rgba(255, 255, 255, 0.426);
+}
+
+.my-todo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+  min-height: 50px;
+  font-weight: 300;
+  color: #333;
+  font-size: 20px;
+  border-bottom: 2px solid #fafafa;
+}
+
+.my-todo > p {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.icon {
+  font-size: 30px;
+  transition: all 0.3 ease;
+}
+
+.icon-check {
+  margin-right: 20px;
+  color: #075985;
+}
+
+.icon-check:hover {
+  color: rgba(7, 89, 133, 0.597);
+}
+.icon-checked {
+  text-decoration: line-through;
+}
+
+.icon-delete {
+  margin-right: 10px;
+  color: #9d174d;
+}
+
+.icon-delete:hover {
+  color: rgba(157, 23, 77, 0.645);
+}
+
+.icon-star {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.icon-star:hover {
+  color: rgba(255, 255, 255, 0.679);
+}
+
+.icon-star-done {
+  color: #d97706;
+  margin-left: 10px;
+}
