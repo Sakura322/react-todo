@@ -33,14 +33,17 @@ function App() {
     <div className="todo-container">
       <div className="input-container">
         <h1>To Do App</h1>
+        <div className="input-inner-container">
+          {" "}
+          <input
+            type="text"
+            className="input"
+            onChange={getTodo}
+            onKeyDown={createTodoKey}
+          />
+          <AiFillCloseCircle className="submit-icon" onClick={createTodo} />
+        </div>
 
-        <input
-          type="text"
-          className="input"
-          onChange={getTodo}
-          onKeyDown={createTodoKey}
-        />
-        <AiFillCloseCircle className="submit-icon" onClick={createTodo} />
         <p>
           You have {count} uncompleted{" "}
           {count !== 0 && count > 1 ? "tasks" : "task"}
